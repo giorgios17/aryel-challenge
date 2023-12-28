@@ -1,0 +1,193 @@
+.App {
+  text-align: center;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+p{
+  margin: 0 !important;
+}
+.purpleColor{
+ color: #3A365C; 
+}
+.bg-blue{
+  background-color: #499AD3;
+}
+.logo{
+  width: 170px;
+  height: 42px;
+  position: fixed;
+  z-index: 3;
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.splashScreenTitle,
+.splashScreenParagraph{
+ color: white; 
+}
+.splashScreenTitle{
+font-size: 28px;
+font-weight: 700;
+line-height: 34px;
+letter-spacing: 0em;
+}
+.splashScreenParagraph{
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+}
+
+.btnPlayNow {
+  align-items: center;
+  background-color: #3A365C;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding: 16px 48px 16px 48px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 100px;
+}
+
+.btnPlayNow:hover,
+.btnPlayNow:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.btnPlayNow:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.btnPlayNow:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+.cookiesContainer{
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+}
+.cookieText{
+font-size: 10px;
+line-height: 14px;
+letter-spacing: 0em;
+}
+.privacyText{
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 14px;
+}
+.hintText{
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 14px;
+}
+.numCountdown{
+font-size: 320px;
+font-weight: 700;
+line-height: 230px;
+color: white;
+}
+.score{
+  background-color: white;
+  color: #3C3662;
+}
+.timer{
+  background-color: #499AD3;
+  color: white;
+}
+.score,.timer{
+width: 149px;
+border-radius: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 10px 12px;
+}
+.score p, .timer p{
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+}
+.score span, .timer span{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.ellipse{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.trophy{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ transform: translate(-50%,-50%);
+}
+.btn.betogheter{
+  background-color: #159BD8;
+}
+.group-button{
+  position: absolute;
+  bottom: 30px;
+  color: white;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
