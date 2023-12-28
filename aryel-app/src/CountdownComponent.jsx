@@ -27,7 +27,7 @@ function CountdownComponent({ setCountdownEnd }) {
     // Cleanup della funzione di intervallo nel caso in cui il componente venga smontato prima che scada l'intervallo
     return () => clearInterval(firstCountdownInterval);
   }, [setCountdownEnd]);
-
+if(!showReady){
   return (
     <>
       <div className="d-flex justify-content-center align-items-center flex-column h-100">
@@ -36,21 +36,32 @@ function CountdownComponent({ setCountdownEnd }) {
           src="/assets/img/fireworks.png"
           alt=""
         />
-        {countdown > 0 ? (
           <span className="numCountdown">{countdown}</span>
-        ) : (
-          <div className="w-50">
-            <p style={{ fontSize: "36px", fontWeight: "700", color: "#3A365C" }}>
-              Pronti
-            </p>
-            <p style={{ fontSize: "52px", fontWeight: "700", color: "white" }}>
-              Partenza Via!
-            </p>
-          </div>
-        )}
       </div>
     </>
   );
+}else{
+  return(
+    <>
+    <div className="d-flex justify-content-center align-items-center flex-column h-100">
+      <img
+        style={{ width: "320px", height: "120px" }}
+        src="/assets/img/fireworks.png"
+        alt=""
+      />
+        <div className="w-50">
+          <p style={{ fontSize: "36px", fontWeight: "700", color: "#3A365C" }}>
+            Pronti
+          </p>
+          <p style={{ fontSize: "52px", fontWeight: "700", color: "white" }}>
+            Partenza Via!
+          </p>
+        </div>
+    </div>
+  </>
+  )
+}
+  
 }
 
 export default CountdownComponent;
